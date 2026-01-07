@@ -12,8 +12,8 @@ st.title("Hierarchical Clustering Visualization App")
 # Load saved model & scaler
 @st.cache_resource
 def load_objects():
-    model = joblib.load("hierarchical_clustering_model.pkl")
-    scaler = joblib.load("scaler.pkl")
+    model = joblib.load("hirarchical_clustering/hierarchical_clustering_model.pkl")
+    scaler = joblib.load("hirarchical_clustering/scaler.pkl")
     return model, scaler
 
 model, scaler = load_objects()
